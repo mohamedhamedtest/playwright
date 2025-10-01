@@ -37,7 +37,7 @@ test.beforeEach(async ({ page }) => {
 
    // 4- اضغط على زرار Add Todo
   await page.locator('[data-testid="add"]').click();
- const todoText = "dzddbdzgxxxgsedwd5aaesxzar";
+ const todoText = "dzddbdzgxxxgsexxxxdwd5aaesxzar";
   // 5- اكتب التودو الجديد
   await page.locator('[data-testid="new-todo"]').fill(todoText);
   await page.locator('[data-testid="submit-newTask"]').click();
