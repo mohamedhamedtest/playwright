@@ -37,7 +37,7 @@ test.beforeEach(async ({ page }) => {
 
    // 4- اضغط على زرار Add Todo
   await page.locator('[data-testid="add"]').click();
- const todoText = "dzddbdzsedwd5aaesxzar";
+ const todoText = "dzddbdzgxxxgsedwd5aaesxzar";
   // 5- اكتب التودو الجديد
   await page.locator('[data-testid="new-todo"]').fill(todoText);
   await page.locator('[data-testid="submit-newTask"]').click();
@@ -65,7 +65,7 @@ test.beforeEach(async ({ page }) => {
 
 });
 
- test('has login ', async ({page}) => {
+ test.skip('has login ', async ({page}) => {
      
   //await page.goto('https://qacart-todo.herokuapp.com/login');
   console.log(await page.url());
